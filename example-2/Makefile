@@ -1,5 +1,4 @@
-# Усложненный make-file. Введены переменные для параметров компиляции,
-# исполняемых файлов и имени исходного файла
+# Усложненный make-file.  Введены переменные для параметров компиляции и исполняемых файлов
 
 .PHONY: all debug release clean
 
@@ -14,7 +13,7 @@ all: debug release
 debug: $(DEBUG_EXEC)
 
 $(DEBUG_EXEC): $(SOURCE)
-	g++ $(DEBUG_FLAGS) $(SOURCE) -o $(DEBUG_EXEC) 
+	g++ $(DEBUG_FLAGS) $(SOURCE) -o $(DEBUG_EXEC)
 
 release: $(RELEASE_EXEC)
 
